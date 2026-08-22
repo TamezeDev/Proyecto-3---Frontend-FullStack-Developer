@@ -1,5 +1,6 @@
 import { Flex, Heading, Text, Image } from '@chakra-ui/react'
 import logoBrand from '../assets/logoBrand.png'
+
 const brandName = 'El rincón de la tinta'
 const altMessage = 'Arbol con montones de libros'
 const brandInfo = 'Dale vida a tu imaginación'
@@ -7,7 +8,7 @@ const brandInfo = 'Dale vida a tu imaginación'
 const Brand = () => {
   return (
     <Flex
-      flexDirection={'row'}
+      flexDirection={{ base: 'column', sm: 'row' }}
       justifyContent={'center'}
       alignItems={'center'}
       p={{ base: 4, md: 6 }}

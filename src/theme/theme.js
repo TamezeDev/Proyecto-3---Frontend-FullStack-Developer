@@ -27,12 +27,11 @@ const customConfig = defineConfig({
         xl: { value: '3rem' }, // 48px
         '2xl': { value: '4rem' }, // 64px
         '3xl': { value: '6rem' }, // 96px},
-
-        radii: {
-          card: {
-            value: '0.75rem',
-            pill: '999px',
-          },
+      },
+      radii: {
+        card: {
+          value: '0.75rem',
+          pill: '999px',
         },
       },
 
@@ -41,6 +40,7 @@ const customConfig = defineConfig({
           50: { value: '#fdf6ec' },
           100: { value: '#f8e8c9' },
           200: { value: '#f0d19c' },
+          250: { value: '#f0d8a0ff' },
           300: { value: '#e6b96f' },
           400: { value: '#d99a4e' },
           500: { value: '#c17f2e' },
@@ -71,6 +71,12 @@ const customConfig = defineConfig({
 
     semanticTokens: {
       colors: {
+        'amber.light': {
+          value: { base: '{colors.brand.200}' },
+        },
+        'amber.hover': {
+          value: { base: '{colors.brand.250}' },
+        },
         'amber.medium': {
           value: { base: '{colors.brand.500}' },
         },
@@ -83,18 +89,21 @@ const customConfig = defineConfig({
     textStyles: {
       sectionTitle: {
         value: {
-          fontSize: { base: '3xl', sm: '4xl', md: '5xl' },
+          fontSize: { base: '3xl', sm: '5xl', md: '5xl' },
           fontWeight: 'bold',
           color: 'amber.medium',
           fontFamily: 'heading',
+          textAlign: 'center',
+          lineHeight: '50px',
         },
       },
 
       subSectionTitle: {
         value: {
           fontSize: { base: 'md', sm: 'xl' },
-          fontWeight: 'italic',
+          fontStyle: 'italic',
           color: 'amber.high',
+          textAlign: 'center',
         },
       },
     },
@@ -102,10 +111,20 @@ const customConfig = defineConfig({
     layerStyles: {
       circleImage: {
         value: {
-          width: '100px',
-          height: '100px',
+          width: { base: '70px', sm: '100px' },
+          height: { base: '70px', sm: '100px' },
           borderRadius: 'full',
           objectFit: 'cover',
+        },
+      },
+      headerBtn: {
+        value: {
+          width: '100px',
+          bg: 'amber.light',
+          color: 'amber.high',
+          transition: 'all 200ms ease',
+          shadow: 'md',
+          _hover: { bg: 'amber.hover' },
         },
       },
     },
