@@ -1,6 +1,7 @@
 import { Flex } from '@chakra-ui/react'
 import Brand from './Brand'
 import HeaderButton from './HeaderButton'
+import NavMenu from './NavMenu'
 
 const Header = () => {
   return (
@@ -9,28 +10,33 @@ const Header = () => {
       flexDirection={'column'}
       justifyContent={'center'}
       gap={3}
-      margin={{ base: '10px', sm: '20px' }}
+      marginLeft={{ base: 'sm', sm: 'md' }}
+      marginRight={{ base: 'sm', sm: 'md' }}
     >
       <Flex
         as={'section'}
         flexDirection={{ base: 'column', md: 'row' }}
         justifyContent={'space-around'}
         gap={3}
-        margin={{ base: '10px', sm: '20px' }}
+        marginTop={{ base: 'sm', sm: 'md' }}
+        borderBottom={'1px solid {colors.amber.high}'}
       >
         <Brand />
         <Flex
           as={'section'}
           flexDirection={'row'}
           justifyContent={'center'}
+          alignItems={'center'}
           wrap={'wrap'}
           gap={{ base: 6, md: 12 }}
-          margin={{ base: '10px', sm: '20px' }}
+          margin={{ base: 'sm', sm: 'md' }}
+          marginBottom={'xl'}
         >
           <HeaderButton name="Regístrate"></HeaderButton>
           <HeaderButton name="Login"></HeaderButton>
         </Flex>
       </Flex>
+      <NavMenu />
     </Flex>
   )
 }

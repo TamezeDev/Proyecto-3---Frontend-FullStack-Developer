@@ -5,8 +5,18 @@ const customConfig = defineConfig({
     body: {
       bg: '{colors.paper.sepia}',
       fontFamily: 'body',
+      minHeight: '100vh',
+      width: '100vW',
     },
-    ul: {},
+    ul: {
+      listStyle: 'none',
+      margin: 0,
+      padding: 0,
+    },
+    a: {
+      color: 'inherit',
+      textDecoration: 'none',
+    },
   },
   theme: {
     tokens: {
@@ -28,11 +38,12 @@ const customConfig = defineConfig({
         '2xl': { value: '4rem' }, // 64px
         '3xl': { value: '6rem' }, // 96px},
       },
+
       radii: {
         card: {
           value: '0.75rem',
-          pill: '999px',
         },
+        pill: { value: '999px' },
       },
 
       colors: {
@@ -72,7 +83,7 @@ const customConfig = defineConfig({
     semanticTokens: {
       colors: {
         'amber.light': {
-          value: { base: '{colors.brand.200}' },
+          value: { base: '{colors.brand.100}' },
         },
         'amber.hover': {
           value: { base: '{colors.brand.250}' },
@@ -82,6 +93,12 @@ const customConfig = defineConfig({
         },
         'amber.high': {
           value: { base: '{colors.brand.600}' },
+        },
+        'amber.strong': {
+          value: { base: '{colors.brand.800}' },
+        },
+        'item.selected': {
+          value: { base: '{colors.brand.900}' },
         },
       },
     },
@@ -123,6 +140,20 @@ const customConfig = defineConfig({
           bg: 'amber.light',
           color: 'amber.high',
           transition: 'all 200ms ease',
+          shadow: 'md',
+          _hover: { bg: 'amber.hover' },
+        },
+      },
+      navItem: {
+        value: {
+          textAlign: 'center',
+          padding: 'xs',
+          bg: 'amber.light',
+          color: 'amber.high',
+          fontSize: { base: 'sm', sm: 'md', md: 'xl' },
+          cursor: 'pointer',
+          transition: 'all 200ms ease',
+          borderRadius: 'md',
           shadow: 'md',
           _hover: { bg: 'amber.hover' },
         },

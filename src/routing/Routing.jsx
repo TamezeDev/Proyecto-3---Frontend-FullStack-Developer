@@ -1,12 +1,22 @@
 import { Routes, Route } from 'react-router-dom'
-import Register from '../components/Register'
-import Login from '../components/Login'
+import Register from '../pages/Register'
+import Login from '../pages/Login'
+import Index from '../pages/Index'
+import Catalog from '../pages/Catalog'
+import Library from '../pages/Library'
+import Reading from '../pages/Reading'
+import About from '../pages/About'
 
 const Routing = () => {
   return (
     <Routes>
+      <Route path="/" element={<Index />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/catalog" element={<Catalog />} />
+      <Route path="/library" element={<Library />} />
+      <Route path="/reading" element={<Reading />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   )
 }
