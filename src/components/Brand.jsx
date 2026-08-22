@@ -1,5 +1,5 @@
 import { Flex, Heading, Text, Image } from '@chakra-ui/react'
-import logoBrand from '../assets/logoBrand.png'
+import logoBrand from '../assets/image/logoBrand.png'
 
 const brandName = 'El rincón de la tinta'
 const altMessage = 'Arbol con montones de libros'

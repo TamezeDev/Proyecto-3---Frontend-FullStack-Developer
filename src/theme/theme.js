@@ -100,6 +100,12 @@ const customConfig = defineConfig({
         'item.selected': {
           value: { base: '{colors.brand.900}' },
         },
+        'text.default': {
+          value: { base: '{colors.ink.800}' },
+        },
+        'text.muted': {
+          value: { base: '{colors.ink.400}' },
+        },
       },
     },
 
@@ -123,6 +129,30 @@ const customConfig = defineConfig({
           textAlign: 'center',
         },
       },
+
+      title: {
+        value: {
+          fontFamily: 'heading',
+          fontSize: { base: 'lg', md: 'xl' },
+          fontWeight: 'semibold',
+          color: 'text.default',
+          lineClamp: 2,
+        },
+      },
+
+      muted: {
+        value: {
+          fontSize: 'sm',
+          color: 'text.muted',
+        },
+      },
+
+      body: {
+        value: {
+          fontSize: 'md',
+          color: 'text.default',
+        },
+      },
     },
 
     layerStyles: {
@@ -134,6 +164,17 @@ const customConfig = defineConfig({
           objectFit: 'cover',
         },
       },
+
+      cardsImage: {
+        value: {
+          width: '100%',
+          height: '200px',
+          objectFit: 'cover',
+          borderRadius: 'md md',
+          marginBottom: 'sm',
+        },
+      },
+
       headerBtn: {
         value: {
           width: '100px',
@@ -144,6 +185,29 @@ const customConfig = defineConfig({
           _hover: { bg: 'amber.hover' },
         },
       },
+
+      newsCard: {
+        value: {
+          maxWidth: '350px',
+          border: '1px solid {colors.amber.strong}',
+          borderRadius: 'card',
+          gap: 'sm',
+          bg: 'white',
+          shadow: 'lg',
+          overflow: 'hidden',
+        },
+      },
+
+      boxCards: {
+        value: {
+          spaceY: '20px',
+          margin: 'sm',
+          minHeight: '200px',
+          maxHeight: '200px',
+          textAlign: 'center',
+        },
+      },
+
       navItem: {
         value: {
           textAlign: 'center',

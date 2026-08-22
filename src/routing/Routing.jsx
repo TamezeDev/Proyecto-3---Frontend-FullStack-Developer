@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Register from '../pages/Register'
 import Login from '../pages/Login'
-import Index from '../pages/Index'
+import Home from '../pages/Home'
 import Catalog from '../pages/Catalog'
 import Library from '../pages/Library'
 import Reading from '../pages/Reading'
@@ -10,7 +10,7 @@ import About from '../pages/About'
 const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={<Index />} />
+      <Route path="/" element={<Home />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/catalog" element={<Catalog />} />
