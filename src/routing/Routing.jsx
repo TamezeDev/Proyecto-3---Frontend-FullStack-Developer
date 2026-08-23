@@ -8,6 +8,7 @@ import Reading from '../pages/Reading'
 import About from '../pages/About'
 import Profile from '../pages/Profile'
 import Cards from '../pages/Cards'
+import { Premium } from '../pages'
 
 const Routing = () => {
   return (
@@ -20,6 +21,7 @@ const Routing = () => {
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/library" element={<Library />} />
       <Route path="/reading" element={<Reading />} />
+      <Route path="/premium" element={<Premium />} />
       <Route path="/about" element={<About />} />
     </Routes>
   )

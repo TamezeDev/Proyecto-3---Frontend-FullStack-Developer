@@ -6,6 +6,7 @@ const navOptions = [
   { name: 'Catálogo', path: '/catalog' },
   { name: 'Biblioteca', path: '/library' },
   { name: 'Leyendo', path: '/reading' },
+  { name: 'Planes premium', path: '/premium' },
   { name: 'Sobre nosotros', path: '/about' },
 ]
 

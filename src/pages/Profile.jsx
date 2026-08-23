@@ -3,6 +3,7 @@ import { useAuth } from '../hooks/useAuth'
 import ProfileInfo from '../components/ProfileInfo'
 import ProfileImage from '../components/ProfileImage'
 import ChangePassword from '../components/ChangePassword'
+import PremiumStatusCard from '../components/PremiumStatusCard'
 
 const Profile = () => {
   const { user, token, updateUser } = useAuth()
@@ -20,6 +21,7 @@ const Profile = () => {
       </Heading>
 
       <ProfileInfo user={user} />
+      <PremiumStatusCard user={user} />
       <ProfileImage token={token} updateUser={updateUser} />
       <ChangePassword token={token} />
     </Flex>
