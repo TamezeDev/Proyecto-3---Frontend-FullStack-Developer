@@ -170,7 +170,7 @@ const customConfig = defineConfig({
         value: {
           width: { base: '70px', sm: '100px' },
           height: { base: '70px', sm: '100px' },
-          borderRadius: 'full',
+          borderRadius: 'pill',
           objectFit: 'cover',
         },
       },
@@ -214,8 +214,20 @@ const customConfig = defineConfig({
           spaceY: '20px',
           margin: 'sm',
           minHeight: '200px',
-          maxHeight: '200px',
+          maxHeight: '250px',
           textAlign: 'center',
+        },
+      },
+
+      globalCard: {
+        value: {
+          bg: '{colors.ink.50}',
+          borderRadius: 'card',
+          border: '1px solid {colors.amber.light}',
+          shadow: 'md',
+          p: 'md',
+          transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+          _hover: { transform: 'translateY(-2px)', shadow: 'lg' },
         },
       },
 
