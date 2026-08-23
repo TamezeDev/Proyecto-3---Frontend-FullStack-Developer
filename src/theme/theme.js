@@ -273,6 +273,7 @@ const customConfig = defineConfig({
           bg: 'amber.high',
           padding: 'xl',
           marginBottom: 'md',
+          marginTop: 'md',
           value: 'md',
           textAlign: 'center',
         },
