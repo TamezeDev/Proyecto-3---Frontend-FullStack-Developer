@@ -42,7 +42,7 @@ const Register = () => {
       const result = await res.json()
 
       if (!res.ok) {
-        throw new Error(result.message || 'Error al registrar la cuenta')
+        throw new Error(result.error || 'Error al registrar la cuenta')
       }
 
       setRegistered(true)

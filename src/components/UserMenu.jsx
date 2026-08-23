@@ -40,7 +40,7 @@ const UserMenu = () => {
           <Box as="button" cursor="pointer" borderRadius="full" outline="none">
             <Avatar.Root size="lg" bg={'amber.light'} shadow={'md'}>
               <Avatar.Fallback textStyle={'profile'} name={user?.name} />
-              <Avatar.Image src={user?.profileImage} />
+              <Avatar.Image src={user?.imageProfileUrl} />
             </Avatar.Root>
           </Box>
         </Menu.Trigger>

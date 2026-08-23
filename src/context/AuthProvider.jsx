@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
     const data = await res.json()
 
     if (!res.ok) {
-      throw new Error(data.message || 'Error al iniciar sesión')
+      throw new Error(data.error || 'Error al iniciar sesión')
     }
 
     const receivedToken = data.sessionToken

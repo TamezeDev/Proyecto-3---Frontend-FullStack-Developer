@@ -149,7 +149,7 @@ const customConfig = defineConfig({
           fontSize: { base: 'lg', md: 'xl' },
           fontWeight: 'semibold',
           color: 'text.default',
-          lineClamp: 2,
+          lineClamp: 3,
         },
       },
 
