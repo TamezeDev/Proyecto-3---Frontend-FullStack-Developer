@@ -82,6 +82,9 @@ const customConfig = defineConfig({
 
     semanticTokens: {
       colors: {
+        'amber.extraLight': {
+          value: { base: '{colors.brand.100}' },
+        },
         'amber.light': {
           value: { base: '{colors.brand.100}' },
         },
@@ -153,6 +156,13 @@ const customConfig = defineConfig({
           color: 'text.default',
         },
       },
+
+      footer: {
+        value: {
+          fontSize: { base: 'md', md: 'lg' },
+          color: 'amber.extraLight',
+        },
+      },
     },
 
     layerStyles: {
@@ -195,6 +205,7 @@ const customConfig = defineConfig({
           bg: 'white',
           shadow: 'lg',
           overflow: 'hidden',
+          marginBottom: 'sm',
         },
       },
 
@@ -217,9 +228,20 @@ const customConfig = defineConfig({
           fontSize: { base: 'sm', sm: 'md', md: 'xl' },
           cursor: 'pointer',
           transition: 'all 200ms ease',
+          textDecoration: 'none',
           borderRadius: 'md',
           shadow: 'md',
           _hover: { bg: 'amber.hover' },
+        },
+      },
+
+      footerCard: {
+        value: {
+          bg: 'amber.high',
+          padding: 'xl',
+          marginBottom: 'md',
+          value: 'md',
+          textAlign: 'center',
         },
       },
     },

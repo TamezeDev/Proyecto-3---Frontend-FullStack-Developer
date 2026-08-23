@@ -7,7 +7,7 @@ const Index = () => {
     <SimpleGrid
       columns={{ base: 1, sm: 2, lg: 3 }}
       justifyItems={'center'}
-      gap={7}
+      gap={6}
       p={{ base: 4, md: 6 }}
     >
       {newsData.map((item) => (
