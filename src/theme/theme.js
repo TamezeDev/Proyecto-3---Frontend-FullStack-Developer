@@ -133,6 +133,16 @@ const customConfig = defineConfig({
         },
       },
 
+      profile: {
+        value: {
+          fontSize: { base: 'lg', sm: 'xl' },
+          fontStyle: 'italic',
+          color: 'amber.high',
+          textAlign: 'center',
+          fontWeight: 'bold',
+        },
+      },
+
       title: {
         value: {
           fontFamily: 'heading',
@@ -193,6 +203,17 @@ const customConfig = defineConfig({
           transition: 'all 200ms ease',
           shadow: 'md',
           _hover: { bg: 'amber.hover' },
+        },
+      },
+
+      userMenuContent: {
+        value: {
+          bg: 'white',
+          borderRadius: 'card',
+          border: '1px solid {colors.amber.light}',
+          shadow: 'lg',
+          py: 'xs',
+          minWidth: '200px',
         },
       },
 

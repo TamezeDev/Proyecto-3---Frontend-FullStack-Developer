@@ -15,3 +15,4 @@ Frontend del proyecto fullstack que renderizará los datos datos obtenidos, con 
 - react-router-dom (Gestión de rutas de navegación en la web)
 - EsLint (para mantener código limpio)
 - React-icons (Para los iconos de la web)
+- React-hook-form  (Para control de formularios)

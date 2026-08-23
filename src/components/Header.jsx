@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react'
 import Brand from './Brand'
-import HeaderButton from './HeaderButton'
 import NavMenu from './NavMenu'
+import UserMenu from './UserMenu'
 
 const Header = () => {
   return (
@@ -32,8 +32,7 @@ const Header = () => {
           margin={{ base: 'sm', sm: 'md' }}
           marginBottom={'xl'}
         >
-          <HeaderButton name="Regístrate"></HeaderButton>
-          <HeaderButton name="Login"></HeaderButton>
+          <UserMenu />
         </Flex>
       </Flex>
       <NavMenu />
