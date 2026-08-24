@@ -11,8 +11,10 @@ import {
   Field,
 } from '@chakra-ui/react'
 import { useAuth } from '../hooks/useAuth'
+import { useScrollIntoView } from '../hooks/useScrollIntoView'
 
 const Login = () => {
+  const formRef = useScrollIntoView()
   const { login } = useAuth()
   const navigate = useNavigate()
   const [serverError, setServerError] = useState('')
@@ -34,7 +36,7 @@ const Login = () => {
 
   return (
     <Flex justifyContent="center" p={{ base: 4, md: 8 }} marginBottom={8}>
-      <Box layerStyle="globalCard" maxWidth="450px" width="100%">
+      <Box layerStyle="globalCard" ref={formRef} maxWidth="450px" width="100%">
         <Heading textStyle="title" as="h1" textAlign="center" mb={6}>
           Inicia sesión
         </Heading>

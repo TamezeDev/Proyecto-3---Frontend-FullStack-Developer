@@ -20,7 +20,13 @@ const NavMenu = () => {
       paddingBottom={{ base: 'md', sm: 'none' }}
       borderBottom={{ base: '1px solid {colors.amber.high}', sm: 'none' }}
     >
-      <Flex as="ul" justifyContent="center" wrap="wrap" gap={8} padding="10px">
+      <Flex
+        as="ul"
+        justifyContent="center"
+        wrap="wrap"
+        gap={{ base: 3, sm: 8 }}
+        padding="10px"
+      >
         {navOptions.map((option) => (
           <NavItem key={option.path} option={option} />
         ))}

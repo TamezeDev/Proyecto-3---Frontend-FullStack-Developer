@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
 import { NavLink } from 'react-router-dom'
+import { useScrollIntoView } from '../hooks/useScrollIntoView'
 import {
   Box,
   Flex,
@@ -14,6 +15,7 @@ import {
 const API_URL = import.meta.env.VITE_API_URL
 
 const Register = () => {
+  const formRef = useScrollIntoView()
   const [serverError, setServerError] = useState('')
   const [registered, setRegistered] = useState(false)
   const {
@@ -55,6 +57,7 @@ const Register = () => {
     <Flex justifyContent="center" p={{ base: 4, md: 8 }} marginBottom={8}>
       <Box
         layerStyle="globalCard"
+        ref={formRef}
         maxWidth="500px"
         width="100%"
         textAlign="center"
@@ -72,7 +75,7 @@ const Register = () => {
     </Flex>
   ) : (
     <Flex justifyContent="center" p={{ base: 4, md: 8 }} marginBottom={8}>
-      <Box layerStyle="globalCard" maxWidth="500px" width="100%">
+      <Box layerStyle="globalCard" ref={formRef} maxWidth="500px" width="100%">
         <Heading textStyle="title" as="h1" textAlign="center" mb={6}>
           Crea tu cuenta
         </Heading>
