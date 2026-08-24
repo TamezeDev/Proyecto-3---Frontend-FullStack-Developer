@@ -65,5 +65,9 @@ export function useInfiniteList(fetchPage, deps = []) {
     [hasMore, loading]
   )
 
-  return { items, loading, error, hasMore, setSentinel }
+  const removeItem = useCallback((id, key = '_id') => {
+    setItems((prev) => prev.filter((item) => item[key] !== id))
+  }, [])
+
+  return { items, loading, error, hasMore, setSentinel, removeItem }
 }

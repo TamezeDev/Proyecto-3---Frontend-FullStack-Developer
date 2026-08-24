@@ -10,6 +10,7 @@ import Profile from '../pages/Profile'
 import Cards from '../pages/Cards'
 import AdminUsers from '../pages/AdminUsers'
 import Premium from '../pages/Premium'
+import AdminCards from '../pages/AdminCards'
 
 const Routing = () => {
   return (
@@ -20,6 +21,7 @@ const Routing = () => {
       <Route path="/perfil" element={<Profile />} />
       <Route path="/tarjetas" element={<Cards />} />
       <Route path="/admin/usuarios" element={<AdminUsers />} />
+      <Route path="/admin/tarjetas" element={<AdminCards />} />
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/library" element={<Library />} />
       <Route path="/reading" element={<Reading />} />
