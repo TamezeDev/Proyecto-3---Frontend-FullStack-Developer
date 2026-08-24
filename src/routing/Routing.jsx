@@ -13,6 +13,7 @@ import Premium from '../pages/Premium'
 import AdminCards from '../pages/AdminCards'
 import AdminPlans from '../pages/AdminPlans'
 import AdminBooks from '../pages/AdminBooks'
+import ReadingSession from '../pages/ReadingSession'
 
 const Routing = () => {
   return (
@@ -20,15 +21,16 @@ const Routing = () => {
       <Route path="/" element={<Home />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/perfil" element={<Profile />} />
-      <Route path="/tarjetas" element={<Cards />} />
-      <Route path="/admin/usuarios" element={<AdminUsers />} />
-      <Route path="/admin/tarjetas" element={<AdminCards />} />
-      <Route path="/admin/planes" element={<AdminPlans />} />
-      <Route path="/admin/libros" element={<AdminBooks />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/cards" element={<Cards />} />
+      <Route path="/admin/users" element={<AdminUsers />} />
+      <Route path="/admin/cards" element={<AdminCards />} />
+      <Route path="/admin/plains" element={<AdminPlans />} />
+      <Route path="/admin/books" element={<AdminBooks />} />
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/library" element={<Library />} />
       <Route path="/reading" element={<Reading />} />
+      <Route path="/reading/:bookId" element={<ReadingSession />} />
       <Route path="/premium" element={<Premium />} />
       <Route path="/about" element={<About />} />
     </Routes>

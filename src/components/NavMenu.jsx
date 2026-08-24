@@ -17,6 +17,8 @@ const NavMenu = () => {
       justify={'center'}
       align={'center'}
       margin={{ base: 'sm' }}
+      paddingBottom={{ base: 'md', sm: 'none' }}
+      borderBottom={{ base: '1px solid {colors.amber.high}', sm: 'none' }}
     >
       <Flex as="ul" justifyContent="center" wrap="wrap" gap={8} padding="10px">
         {navOptions.map((option) => (

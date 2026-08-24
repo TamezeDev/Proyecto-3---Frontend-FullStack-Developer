@@ -15,6 +15,7 @@ const Library = () => {
   useEffect(() => {
     async function loadLibrary() {
       try {
+        if (!token) return
         const res = await fetch(`${API_URL}/users/library`, {
           headers: { Authorization: `Bearer ${token}` },
         })

@@ -51,8 +51,8 @@ const UserMenu = () => {
         <Menu.Positioner>
           <Menu.Content layerStyle="userMenuContent">
             <Menu.ItemGroup title="Mi cuenta">
-              <Menu.Item value="/perfil">Mi perfil</Menu.Item>
-              <Menu.Item value="/tarjetas">Mis tarjetas</Menu.Item>
+              <Menu.Item value="/profile">Mi perfil</Menu.Item>
+              <Menu.Item value="/cards">Mis tarjetas</Menu.Item>
               <Menu.Item value="/premium">Pasar a premium</Menu.Item>
             </Menu.ItemGroup>
 
@@ -60,12 +60,12 @@ const UserMenu = () => {
               <>
                 <Menu.Separator />
                 <Menu.ItemGroup title="Administración">
-                  <Menu.Item value="/admin/usuarios">Usuarios</Menu.Item>
-                  <Menu.Item value="/admin/tarjetas">
+                  <Menu.Item value="/admin/users">Usuarios</Menu.Item>
+                  <Menu.Item value="/admin/cards">
                     Tarjetas del sistema
                   </Menu.Item>
-                  <Menu.Item value="/admin/planes">Planes premium</Menu.Item>
-                  <Menu.Item value="/admin/libros">Gestión de libros</Menu.Item>
+                  <Menu.Item value="/admin/plains">Planes premium</Menu.Item>
+                  <Menu.Item value="/admin/books">Gestión de libros</Menu.Item>
                 </Menu.ItemGroup>
               </>
             )}
