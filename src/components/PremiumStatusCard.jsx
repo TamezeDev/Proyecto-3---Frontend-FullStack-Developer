@@ -1,15 +1,15 @@
-import { Box, Heading, Text, Button } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import { Box, Heading, Text, Button } from '@chakra-ui/react'
+import { NavLink } from 'react-router-dom'
 
 const formatDate = (isoDate) =>
-  new Date(isoDate).toLocaleDateString("es-ES", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  new Date(isoDate).toLocaleDateString('es-ES', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
 
 const PremiumStatusCard = ({ user }) => {
-  const premiumAccount = user?.premiumAccount;
+  const premiumAccount = user?.premiumAccount
 
   if (!premiumAccount) {
     return (
@@ -20,16 +20,16 @@ const PremiumStatusCard = ({ user }) => {
         <Text textStyle="muted" mb={4}>
           Todavía no tienes ningún plan activo.
         </Text>
-        <Button asChild layerStyle="headerBtn">
+        <Button asChild layerStyle="headerBtn" width={'auto'}>
           <NavLink to="/premium">Ver planes premium</NavLink>
         </Button>
       </Box>
-    );
+    )
   }
 
-  const nextPaymentDate = new Date(premiumAccount.nextPaymentDate);
-  const isExpiredByDate = nextPaymentDate < new Date();
-  const isActive = premiumAccount.isPremiumNow && !isExpiredByDate;
+  const nextPaymentDate = new Date(premiumAccount.nextPaymentDate)
+  const isExpiredByDate = nextPaymentDate < new Date()
+  const isActive = premiumAccount.isPremiumNow && !isExpiredByDate
 
   return (
     <Box layerStyle="globalCard">
@@ -40,15 +40,15 @@ const PremiumStatusCard = ({ user }) => {
       <Text
         textStyle="body"
         fontWeight="bold"
-        color={isActive ? "green.600" : "red.500"}
+        color={isActive ? 'green.600' : 'red.500'}
         mb={2}
       >
-        {isActive ? "Activa" : "Caducada"}
+        {isActive ? 'Activa' : 'Caducada'}
       </Text>
 
       <Text textStyle="muted">
-        Duración del plan: {premiumAccount.durationMonths}{" "}
-        {premiumAccount.durationMonths === 1 ? "mes" : "meses"}
+        Duración del plan: {premiumAccount.durationMonths}{' '}
+        {premiumAccount.durationMonths === 1 ? 'mes' : 'meses'}
       </Text>
 
       <Text textStyle="muted">
@@ -56,17 +56,17 @@ const PremiumStatusCard = ({ user }) => {
       </Text>
 
       <Text textStyle="muted" mb={4}>
-        {isActive ? "Próximo pago" : "Caducó el"}:{" "}
+        {isActive ? 'Próximo pago' : 'Caducó el'}:{' '}
         {formatDate(premiumAccount.nextPaymentDate)}
       </Text>
 
       {!isActive && (
-        <Button asChild layerStyle="headerBtn">
+        <Button asChild layerStyle="headerBtn" width={'auto'}>
           <NavLink to="/premium">Renovar ahora</NavLink>
         </Button>
       )}
     </Box>
-  );
-};
+  )
+}
 
-export default PremiumStatusCard;
+export default PremiumStatusCard
