@@ -3,11 +3,13 @@ import { SimpleGrid, Heading, Text, Flex, Box } from '@chakra-ui/react'
 import { useAuth } from '../hooks/useAuth'
 import { useInfiniteList } from '../hooks/useInfiniteList'
 import CatalogBookCard from '../components/CatalogBookCard'
+import { useScrollIntoView } from '../hooks/useScrollIntoView'
 
 const API_URL = import.meta.env.VITE_API_URL
 const LIMIT = 15
 
 const Catalog = () => {
+  const formRef = useScrollIntoView()
   const { user, token, isAuthenticated, isPremium, updateUser } = useAuth()
 
   const fetchBooksPage = useCallback(async (page) => {
@@ -27,7 +29,7 @@ const Catalog = () => {
 
   return (
     <Flex flexDirection="column" gap={6} p={{ base: 4, md: 8 }}>
-      <Box textAlign="center">
+      <Box textAlign="center" ref={formRef}>
         <Heading textStyle="sectionTitle" as="h1">
           Catálogo
         </Heading>

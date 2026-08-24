@@ -1,14 +1,17 @@
 import { Box, Flex, Heading, Text, SimpleGrid, Icon } from '@chakra-ui/react'
 import { features, steps } from '../assets/data/aboutData'
+import { useScrollIntoView } from '../hooks/useScrollIntoView'
 
 const About = () => {
+  const formRef = useScrollIntoView()
+
   return (
     <Flex
       flexDirection="column"
       gap={{ base: 10, md: 16 }}
       p={{ base: 4, md: 8 }}
     >
-      <Box textAlign="center" maxWidth="700px" margin="0 auto">
+      <Box ref={formRef} textAlign="center" maxWidth="700px" margin="0 auto">
         <Heading textStyle="sectionTitle" as="h1">
           Conócenos
         </Heading>

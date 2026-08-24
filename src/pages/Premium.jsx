@@ -3,10 +3,12 @@ import { Box, Flex, Heading, Text, Button, SimpleGrid } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import PaymentForm from '../components/PaymentForm'
+import { useScrollIntoView } from '../hooks/useScrollIntoView'
 
 const API_URL = import.meta.env.VITE_API_URL
 
 const Premium = () => {
+  const formRef = useScrollIntoView()
   const { user, token, isAuthenticated, updateUser } = useAuth()
   const [plans, setPlans] = useState([])
   const [loadingPlans, setLoadingPlans] = useState(true)
@@ -46,7 +48,7 @@ const Premium = () => {
       maxWidth="900px"
       margin="0 auto"
     >
-      <Box textAlign="center">
+      <Box ref={formRef} textAlign="center">
         <Heading textStyle="sectionTitle" as="h1">
           Planes premium
         </Heading>

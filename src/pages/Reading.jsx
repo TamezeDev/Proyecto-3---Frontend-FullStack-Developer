@@ -3,10 +3,12 @@ import { SimpleGrid, Heading, Text, Flex, Box } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import ReadingProgressCard from '../components/ReadingProgressCard'
+import { useScrollIntoView } from '../hooks/useScrollIntoView'
 
 const API_URL = import.meta.env.VITE_API_URL
 
 const Reading = () => {
+  const formRef = useScrollIntoView()
   const { user, token, updateUser } = useAuth()
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(true)
@@ -38,7 +40,7 @@ const Reading = () => {
 
   return (
     <Flex flexDirection="column" gap={6} p={{ base: 4, md: 8 }}>
-      <Heading textStyle="sectionTitle" as="h1">
+      <Heading ref={formRef} textStyle="sectionTitle" as="h1">
         Continuar leyendo
       </Heading>
       {loading && (
