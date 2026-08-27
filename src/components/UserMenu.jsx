@@ -64,7 +64,7 @@ const UserMenu = () => {
                   <Menu.Item value="/admin/cards">
                     Tarjetas del sistema
                   </Menu.Item>
-                  <Menu.Item value="/admin/plains">Planes premium</Menu.Item>
+                  <Menu.Item value="/admin/plans">Planes premium</Menu.Item>
                   <Menu.Item value="/admin/books">Gestión de libros</Menu.Item>
                 </Menu.ItemGroup>
               </>

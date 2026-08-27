@@ -25,7 +25,7 @@ const Routing = () => {
       <Route path="/cards" element={<Cards />} />
       <Route path="/admin/users" element={<AdminUsers />} />
       <Route path="/admin/cards" element={<AdminCards />} />
-      <Route path="/admin/plains" element={<AdminPlans />} />
+      <Route path="/admin/plans" element={<AdminPlans />} />
       <Route path="/admin/books" element={<AdminBooks />} />
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/library" element={<Library />} />
