@@ -47,7 +47,7 @@ VITE_API_URL=http://localhost:3000/api/v1
 - Para correr el proyecto en local:
 
 ```bash
-git clone https://github.com/Tamezee/Proyecto-3---Frontend-FullStack-Developer.git
+git clone https://github.com/TamezeDev/Proyecto-3---Frontend-FullStack-Developer.git
 cd Proyecto-3---Frontend-FullStack-Developer
 npm i
 npm run dev
