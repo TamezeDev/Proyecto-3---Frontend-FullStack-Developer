@@ -55,6 +55,9 @@ npm run dev
 
 - Es necesario tener el backend del proyecto corriendo en paralelo, ya que este frontend consume sus endpoints para todo (catálogo, usuarios, tarjetas, planes premium, etc.).
 
+- El proyecto se encuentra actualmente desplegado y funcionando realmente. Puedes acceder desde [aquí](https://elrincondelatinta.netlify.app/)
+- Conecta con el backend para este mismo proyecto que también se encuentra en producción, por lo que los datos registrados y recibidos son reales y permanentes
+
 ## Roles y permisos
 
 La navegación y las acciones disponibles cambian según el estado de la sesión:
