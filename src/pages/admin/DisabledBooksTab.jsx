@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { SimpleGrid, Text, Flex } from '@chakra-ui/react'
-import BookAdminCard from '../components/BookAdminCard'
+import BookAdminCard from '../../components/BookAdminCard'
 
 const API_URL = import.meta.env.VITE_API_URL
 

@@ -1,6 +1,6 @@
 import { SimpleGrid } from '@chakra-ui/react'
-import NewsCard from '../components/NewsCard.jsx'
-import newsData from '../assets/data/indexData.js'
+import NewsCard from '../../components/NewsCard.jsx'
+import newsData from '../../assets/data/indexData.js'
 
 const Index = () => {
   return (

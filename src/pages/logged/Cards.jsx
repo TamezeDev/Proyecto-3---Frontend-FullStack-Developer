@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Flex, Heading, Text } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
-import CardItem from '../components/CardItem'
-import AddCardForm from '../components/AddCardForm'
+import { useAuth } from '../../hooks/useAuth'
+import CardItem from '../../components/CardItem'
+import AddCardForm from '../../components/AddCardForm'
 
 const Cards = () => {
   const { user, token, updateUser } = useAuth()

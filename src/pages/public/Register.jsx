@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
 import { NavLink } from 'react-router-dom'
-import { useScrollIntoView } from '../hooks/useScrollIntoView'
+import { useScrollIntoView } from '../../hooks/useScrollIntoView'
 import {
   Box,
   Flex,

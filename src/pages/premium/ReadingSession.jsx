@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Box, Flex, Heading, Text, Button, Progress } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
+import { useAuth } from '../../hooks/useAuth'
 
 const API_URL = import.meta.env.VITE_API_URL
 

@@ -1,9 +1,9 @@
 import { Flex, Heading } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
-import ProfileInfo from '../components/ProfileInfo'
-import ProfileImage from '../components/ProfileImage'
-import ChangePassword from '../components/ChangePassword'
-import PremiumStatusCard from '../components/PremiumStatusCard'
+import { useAuth } from '../../hooks/useAuth'
+import ProfileInfo from '../../components/ProfileInfo'
+import ProfileImage from '../../components/ProfileImage'
+import ChangePassword from '../../components/ChangePassword'
+import PremiumStatusCard from '../../components/PremiumStatusCard'
 
 const Profile = () => {
   const { user, token, updateUser } = useAuth()

@@ -10,8 +10,8 @@ import {
   Text,
   Field,
 } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
-import { useScrollIntoView } from '../hooks/useScrollIntoView'
+import { useAuth } from '../../hooks/useAuth'
+import { useScrollIntoView } from '../../hooks/useScrollIntoView'
 
 const Login = () => {
   const formRef = useScrollIntoView()

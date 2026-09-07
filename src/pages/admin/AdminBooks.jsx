@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Tabs, Heading, Flex } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
-import AddBookForm from '../components/AddBookForm'
+import { useAuth } from '../../hooks/useAuth'
+import AddBookForm from '../../components/AddBookForm'
 import DisabledBooksTab from './DisabledBooksTab'
-import AvailableBooksTab from '../components/AvailableBooksTab'
+import AvailableBooksTab from '../../components/AvailableBooksTab'
 
 const AdminBooks = () => {
   const { token } = useAuth()

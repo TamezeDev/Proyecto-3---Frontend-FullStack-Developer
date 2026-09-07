@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Box, Flex, Heading, Text, Button, SimpleGrid } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
-import { useAuth } from '../hooks/useAuth'
-import PaymentForm from '../components/PaymentForm'
-import { useScrollIntoView } from '../hooks/useScrollIntoView'
+import { useAuth } from '../../hooks/useAuth'
+import PaymentForm from '../../components/PaymentForm'
+import { useScrollIntoView } from '../../hooks/useScrollIntoView'
 
 const API_URL = import.meta.env.VITE_API_URL
 

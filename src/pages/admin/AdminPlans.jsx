@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { SimpleGrid, Heading, Text, Flex } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
-import PlanAdminCard from '../components/PlanAdminCard'
-import NewPlanForm from '../components/NewPlanForm'
+import { useAuth } from '../../hooks/useAuth'
+import PlanAdminCard from '../../components/PlanAdminCard'
+import NewPlanForm from '../../components/NewPlanForm'
 
 const API_URL = import.meta.env.VITE_API_URL
 

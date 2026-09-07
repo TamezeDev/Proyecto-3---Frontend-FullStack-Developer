@@ -1,0 +1,18 @@
+export const paths = {
+  home: '/',
+  about: '/about',
+  catalog: '/catalog',
+  premium: '/premium',
+  login: '/login',
+  register: '/register',
+  profile: '/profile',
+  cards: '/cards',
+  library: '/library',
+  reading: '/reading',
+  readingSession: '/reading/:bookId',
+  adminUsers: '/admin/users',
+  adminCards: '/admin/cards',
+  adminPlans: '/admin/plans',
+  adminBooks: '/admin/books',
+  notFound: '*',
+}

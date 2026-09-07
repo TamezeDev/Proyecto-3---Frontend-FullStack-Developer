@@ -1,38 +1,44 @@
 import { Routes, Route } from 'react-router-dom'
-import Register from '../pages/Register'
-import Login from '../pages/Login'
-import Home from '../pages/Home'
-import Catalog from '../pages/Catalog'
-import Library from '../pages/Library'
-import Reading from '../pages/Reading'
-import About from '../pages/About'
-import Profile from '../pages/Profile'
-import Cards from '../pages/Cards'
-import AdminUsers from '../pages/AdminUsers'
-import Premium from '../pages/Premium'
-import AdminCards from '../pages/AdminCards'
-import AdminPlans from '../pages/AdminPlans'
-import AdminBooks from '../pages/AdminBooks'
-import ReadingSession from '../pages/ReadingSession'
+import { paths } from './paths'
+
+import {
+  Home,
+  About,
+  Catalog,
+  Premium,
+  Login,
+  Register,
+  Profile,
+  Cards,
+  Library,
+  Reading,
+  ReadingSession,
+  AdminUsers,
+  AdminCards,
+  AdminPlans,
+  AdminBooks,
+  NotFound,
+} from '../pages/index'
 
 const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/cards" element={<Cards />} />
-      <Route path="/admin/users" element={<AdminUsers />} />
-      <Route path="/admin/cards" element={<AdminCards />} />
-      <Route path="/admin/plans" element={<AdminPlans />} />
-      <Route path="/admin/books" element={<AdminBooks />} />
-      <Route path="/catalog" element={<Catalog />} />
-      <Route path="/library" element={<Library />} />
-      <Route path="/reading" element={<Reading />} />
-      <Route path="/reading/:bookId" element={<ReadingSession />} />
-      <Route path="/premium" element={<Premium />} />
-      <Route path="/about" element={<About />} />
+      <Route path={paths.home} element={<Home />} />
+      <Route path={paths.about} element={<About />} />
+      <Route path={paths.catalog} element={<Catalog />} />
+      <Route path={paths.premium} element={<Premium />} />
+      <Route path={paths.login} element={<Login />} />
+      <Route path={paths.register} element={<Register />} />
+      <Route path={paths.profile} element={<Profile />} />
+      <Route path={paths.cards} element={<Cards />} />
+      <Route path={paths.library} element={<Library />} />
+      <Route path={paths.reading} element={<Reading />} />
+      <Route path={paths.readingSession} element={<ReadingSession />} />
+      <Route path={paths.adminUsers} element={<AdminUsers />} />
+      <Route path={paths.adminCards} element={<AdminCards />} />
+      <Route path={paths.adminPlans} element={<AdminPlans />} />
+      <Route path={paths.adminBooks} element={<AdminBooks />} />
+      <Route path={paths.notFound} element={<NotFound />} />
     </Routes>
   )
 }

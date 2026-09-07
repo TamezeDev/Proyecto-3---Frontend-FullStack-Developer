@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Text, SimpleGrid, Icon } from '@chakra-ui/react'
-import { features, steps } from '../assets/data/aboutData'
-import { useScrollIntoView } from '../hooks/useScrollIntoView'
+import { features, steps } from '../../assets/data/aboutData'
+import { useScrollIntoView } from '../../hooks/useScrollIntoView'
 
 const About = () => {
   const formRef = useScrollIntoView()

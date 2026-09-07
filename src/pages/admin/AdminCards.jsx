@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react'
 import { SimpleGrid, Heading, Text, Flex, Box, Button } from '@chakra-ui/react'
-import { useAuth } from '../hooks/useAuth'
-import { useInfiniteList } from '../hooks/useInfiniteList'
-import CardAdminItem from '../components/CardAdminItem'
+import { useAuth } from '../../hooks/useAuth'
+import { useInfiniteList } from '../../hooks/useInfiniteList'
+import CardAdminItem from '../../components/CardAdminItem'
 
 const API_URL = import.meta.env.VITE_API_URL
 const LIMIT = 12
